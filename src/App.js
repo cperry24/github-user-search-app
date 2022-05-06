@@ -2,6 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  // Fetching the github API test
+  fetch('https://api.github.com/users/cperry24')
+    .then(res => res.json())
+    .then(data => console.log(data))
+
+
   return (
     <div className="App">
       <header className="App-header">
