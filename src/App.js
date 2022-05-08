@@ -1,5 +1,7 @@
 import './App.css';
 import {useState, useEffect} from 'react'
+import Header from './components/Header'
+import UserProfile from './components/UserProfile'
 
 function App() {
   const [user, setUser] = useState({})
@@ -12,9 +14,18 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <h1>{user.name}</h1>
-    </div>
+    <main>
+      <Header />
+      <div className="search-container">
+        <input 
+          type="test" 
+          name="search"
+          placeholder="Search Github username..."
+        />
+        <button value="submit">Search</button>
+      </div>
+      <UserProfile user={user} />
+    </main>
   );
 }
 
