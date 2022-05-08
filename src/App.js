@@ -11,6 +11,7 @@ function App() {
     fetch('https://api.github.com/users/cperry24')
     .then(res => res.json())
     .then(obj => setUser(obj))
+    .catch(error => console.log(error))
   }, [])
 
   return (
