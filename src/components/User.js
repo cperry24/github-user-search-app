@@ -3,8 +3,7 @@ import UserStats from './UserStats'
 import UserLinks from './UserLinks'
 
 const User = ({name, img, username, bio, joined}) => {
-    // console.log(name, img, username, bio, joined)
-
+    
     function getJoinedDate() {
         const date = new Date(joined).toLocaleDateString('en-us', {year: 'numeric', month: 'short', day: 'numeric'})
         const dateArr = date.replace(',', '').split(' ')

@@ -45,7 +45,7 @@ const UserProfile = ({user}) => {
     const {avatar_url: url, login: username, bio, created_at: joined, name} = user
 
     return (
-        <div class="user-profile">
+        <div className="user-profile">
             <User
                 name={name} 
                 img={url} 
