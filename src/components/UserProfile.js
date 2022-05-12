@@ -49,7 +49,7 @@ const UserProfile = ({user}) => {
             <User
                 name={name} 
                 img={url} 
-                username={username} 
+                username={username}  
                 bio={bio} 
                 joined={joined} 
             />

@@ -1,6 +1,7 @@
 /* Base Styles */
 :root {
   --background-dark: hsl(217, 21%, 21%);
+  --light-font-color: #fff;
 }
 
 * {
@@ -14,4 +15,14 @@
 body {
   background-color: var(--background-dark);
   font-family: 'Space Mono', monospace;
+  color: var(--light-font-color);
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2em;
 }

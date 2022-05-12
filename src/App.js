@@ -15,7 +15,7 @@ function App() {
   }, [])
 
   return (
-    <main>
+    <main class="main-container">
       <Header />
       <div className="search-container">
         <input 

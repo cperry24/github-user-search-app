@@ -13,9 +13,11 @@ const User = ({name, img, username, bio, joined}) => {
     return (
         <div className="user">
             <img src={img} alt={name} />
-            <h1>{name}</h1>
-            <p>{username}</p>
-            <p>{bio}</p>
+            <div className="user-information">
+                <h1>{name}</h1>
+                <p>{username}</p>
+                <p>{bio}</p>
+            </div>
             <p>Joined {getJoinedDate()}</p>
         </div>
     )
